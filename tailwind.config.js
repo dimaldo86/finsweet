@@ -8,7 +8,9 @@ module.exports = {
         colors: {
           'main': ' #E5E5E5;',
           'primary': '#232536',
+          'footer':'#2e3040',
           'yellow':'#FFD050',
+          'hover':'#EDC14A',
           'purple':'#592EA9',
           'darkGrey':'#4C4C4C',
           'mediumGrey':'#6D6E76',
@@ -17,6 +19,7 @@ module.exports = {
           'lightYellow':'#FBF6EA'
           },
         fontFamily: {
+          'inter':['Inter', 'sans-serif'],
           'sen':['Sen', 'sans-serif']
         },
       },

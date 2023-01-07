@@ -4,31 +4,22 @@
 
 @layer base {
   html {
-    font-family: 'Inter', 'sans-serif';
-    font-size: 16px;
-    font-weight: 400;
+    @apply font-inter text-base font-normal not-italic
   }
 }
 
 .container {
-	@apply max-w-[1300px] my-0 mx-auto px-[10px]
+	@apply max-w-[1300px] my-0 mx-auto md:px-[10px] px-4
 }
 
 #app {
   @apply overflow-hidden flex flex-col min-h-screen
 }
-
-@layer components {
-  .header__top {
-    border-color:rgba(0, 0, 0, 0.1)
+@layer utilities {
+  .custom-transition {
+    transition: all .5s ease-in-out;
   }
-}
-
-@layer components {
-  .nav__link {
-      font-family:'Satoshi';
-  }
-  .nav__link:hover {
-    color:#fff;
+  .burger-transition {
+    transition: transform .6s cubic-bezier(.165,.84,.44,1),opacity .3s cubic-bezier(.165,.84,.44,1),background-color .6s cubic-bezier(.165,.84,.44,1);
   }
 }
