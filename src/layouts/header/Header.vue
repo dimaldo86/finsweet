@@ -1,16 +1,13 @@
 <template>
-    <header class="bg-primary">
+    <header class="bg-primary fixed w-full">
         <div class="container">
-            <nav class="h-20 flex items-center py-3">
-                <a href="/"  class="transition duration-500 hover:opacity-70" >
+            <nav class="h-12 xs:h-16 sm:h-20 flex items-center py-3">
+                <a href="/"  class="transition duration-500 hover:opacity-70 z-[1000]" >
                     <img src="../../assets/img/header/Logo.png" alt="LOGO">
                 </a>
                 <HeaderBurgerVue></HeaderBurgerVue>
                 <HeaderMobileMenuVue>
-                    <a href="/"  class="transition duration-500 hover:opacity-70" >
-                        <img src="../../assets/img/header/Logo.png" alt="LOGO">
-                    </a>
-                    <ul class="flex flex-col w-full items-center justify-between">
+                    <ul class="flex flex-col mt-8 md:mt-0 w-full items-center justify-between">
                         <li v-for="link in menuHeaderLinks" :key="link.id" class="w-full my-5 last:mr-0">
                             <a href="#" class="text-white custom-transition hover:text-yellow">{{ link.name }}</a>
                         </li>
@@ -34,7 +31,7 @@
 <script setup>
 import HeaderBurgerVue from './HeaderBurger.vue';
 import HeaderMobileMenuVue from './HeaderMobileMenu.vue';
-import { menuHeaderLinks } from '@/constants/menu';
+import { menuHeaderLinks } from '@/constants/links';
 import uiButtonVue from '@/components/ui/ui-button.vue';
 
 

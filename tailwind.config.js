@@ -4,6 +4,21 @@ module.exports = {
       "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     theme: {
+      screens: {
+        'xs':'475px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      letterSpacing: {
+        '1': '0em',
+        '2': '0.025em',
+        '3': '0.05em',
+        '4': '0.1em',
+        '5': '0.19em'
+      },
       extend: {
         colors: {
           'main': ' #E5E5E5;',

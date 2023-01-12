@@ -1,14 +1,14 @@
 <template>
     <form
         @submit.prevent="submit"
-        class="relative w-1/2 flex items-center gap-6 justify-between"
+        class="relative w-full lg:w-1/2 flex flex-col sm:flex-row items-center gap-6 justify-between"
         novalidate
     >
         <input
             v-model.trim="data.email"
             @blur="v.email.$touch"
             :error="v.email.$errors"
-            class="bg-transparent w-[323px] text-white font-sen outline-none border border-darkGrey h-14 pl-6 py-3 placeholder:text-mediumGrey focus:border-white tansition duration-500 ease-in-out"
+            class="bg-transparent w-full sm:w-3/5 text-white font-sen outline-none border border-darkGrey h-14 pl-6 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-white tansition duration-500 ease-in-out"
             type="email"
             name="email"
             placeholder="Enter Your Email"
@@ -36,7 +36,7 @@
             leave-to-class="translate-x-[150px] opacity-0"
             appear
         >
-            <div class="absolute bottom-[-35px] left-0 text-base text-white p-1"> {{ feedback }}</div>
+            <div class="absolute bottom-[-35px] left-0 text-sm sm:text-base text-white p-1"> {{ feedback }}</div>
 		</transition>
 
     </form>
