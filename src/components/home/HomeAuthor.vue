@@ -31,12 +31,12 @@
                         v-for="link in socialLinks"
                         :key="link.id"
                     >
-                        <router-link
+                        <a
                             class="link__author w-5 h-5"
                             :to="link.url"
                             v-html="link.icon"
                             target="_blank"
-                        ></router-link>
+                        ></a>
                     </li>
                 </ul>
             </swiper-slide>

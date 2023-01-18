@@ -1,6 +1,6 @@
 <template>
-    <header class="bg-primary fixed w-full z-[10000]">
-        <div class="container">
+    <header :class="toggleNavClass()" class="header bg-primary shadow-lg shadow-primary custom-transition fixed w-screen z-[10000]">
+        <div class="container"  >
             <nav class="h-12 xs:h-16 sm:h-20 flex items-center py-3">
                 <a href="/"  class="transition duration-500 hover:opacity-70 z-[1000]" >
                     <img src="../../assets/img/header/Logo.png" alt="LOGO">
@@ -29,10 +29,43 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
 import HeaderBurgerVue from './HeaderBurger.vue';
 import HeaderMobileMenuVue from './HeaderMobileMenu.vue';
 import { menuHeaderLinks } from '@/js/constants';
 import uiButtonVue from '@/components/ui/ui-button.vue';
 
+const isFixed = ref(false)
 
+const toggleNavClass = () => {
+        if(isFixed.value == false){
+          return 'header'
+        } else {
+          return 'header.hide'
+        }
+    }
+onMounted(() => {
+    let lastScroll = 0;
+    const defaultOffset = 300;
+    const header = document.querySelector('.header');
+    const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
+    const containHide = () => header.classList.contains('hide');
+
+    window.addEventListener('scroll', () => {
+            if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
+                header.classList.add('hide');
+            }
+            else if(scrollPosition() < lastScroll && containHide()){
+                header.classList.remove('hide');
+            }
+            lastScroll = scrollPosition();
+        })
+    }
+)
 </script>
+
+<style>
+.header.hide {
+    transform: translateY(-80px);
+}
+</style>
