@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[url('@/assets/img/home/main.jpg')] bg-center bg-no-repeat bg-cover pt-12 sm:pt-24 pb-12 sm:pb-32 md:pb-48 2xl:pb-96">
+  <section class="bg-[url('@/assets/img/home/main.jpg')] bg-center bg-no-repeat bg-cover pt-12 sm:pt-24 pb-12 sm:pb-32 md:pb-44 2xl:pb-72">
         <div class="container">
             <div class=" mt-8 sm:mt-16 md:mt-32 w-full h-full">
                 <div class="text-white tracking-5">Posted on <b>startup</b></div>
@@ -14,7 +14,7 @@
                     voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     Excepteur sint occaecat cupidatat non proident.
                 </p>
-                <uiButtonVue class="hover:bg-purple hover:text-white" background="bg-yellow">Read More ></uiButtonVue>
+                <uiButtonVue type="link" to="#">Read More ></uiButtonVue>
             </div>
         </div>
     </section>

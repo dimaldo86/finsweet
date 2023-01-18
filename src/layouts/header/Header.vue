@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-primary fixed w-full">
+    <header class="bg-primary fixed w-full z-[10000]">
         <div class="container">
             <nav class="h-12 xs:h-16 sm:h-20 flex items-center py-3">
                 <a href="/"  class="transition duration-500 hover:opacity-70 z-[1000]" >
@@ -12,7 +12,7 @@
                             <a href="#" class="text-white custom-transition hover:text-yellow">{{ link.name }}</a>
                         </li>
                     </ul>
-                    <uiButtonVue background="bg-white" mobileFullWidth="false">Subscribe</uiButtonVue>
+                    <uiButtonVue background="bg-white">Subscribe</uiButtonVue>
                 </HeaderMobileMenuVue>
                 <div class="md:flex items-center ml-auto h-full hidden">
                     <ul class="flex items-center justify-between mr-8">
@@ -31,7 +31,7 @@
 <script setup>
 import HeaderBurgerVue from './HeaderBurger.vue';
 import HeaderMobileMenuVue from './HeaderMobileMenu.vue';
-import { menuHeaderLinks } from '@/constants/links';
+import { menuHeaderLinks } from '@/js/constants';
 import uiButtonVue from '@/components/ui/ui-button.vue';
 
 

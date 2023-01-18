@@ -46,7 +46,7 @@
 
 <script setup>
 import FormVue from '@/components/Form.vue';
-import { menuFooterLinks } from '@/constants/links'
-import { socialLinks } from '@/constants/links';
+import { menuFooterLinks } from '@/js/constants'
+import { socialLinks } from '@/js/constants';
 
 </script>

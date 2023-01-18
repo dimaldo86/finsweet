@@ -13,8 +13,11 @@
             name="email"
             placeholder="Enter Your Email"
         >
-        <uiButtonVue :disabled="v.$invalid"
-				class="disabled:bg-white disabled:text-mediumGrey disabled:cursor  transition duration-500 ease-in-out ">Subscribe</uiButtonVue>
+        <uiButtonVue
+            :disabled="v.$invalid"
+            class="disabled:bg-white disabled:text-mediumGrey disabled:cursor  transition duration-500 ease-in-out "
+        >Subscribe
+        </uiButtonVue>
         <transition
             enter-active-class="duration-300 ease-out"
             leave-active-class="duration-700 ease-in-out"

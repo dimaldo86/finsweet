@@ -7,6 +7,12 @@ export const useSidebarStore = defineStore('sidebarStore', {
     actions: {
         toggleNav() {
             this.isNavOpen = !this.isNavOpen
+            if(this.isNavOpen){
+                document.documentElement.style.overflow = 'hidden'
+                return
+              }
+              
+            document.documentElement.style.overflow = 'auto'
         }
     },
   })

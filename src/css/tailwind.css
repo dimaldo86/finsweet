@@ -12,13 +12,19 @@
 	@apply max-w-[1300px] my-0 mx-auto md:px-[10px] px-3
 }
 .section__title {
-  @apply w-full md:w-3/4 lg:w-1/2 text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen tracking-5
+  @apply w-full md:w-3/4 lg:w-1/2 text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen font-bold -tracking-3
 }
-.link > svg > path {
+.link > svg > path, .link__author > svg > path  {
     @apply custom-transition
 }
 .link:hover > svg > path {
         fill:#FFD050;
+}
+.link__author > svg > path {
+        fill:#000;
+}
+.link__author:hover > svg > path {
+        fill:#592EA9;
 }
 
 #app {

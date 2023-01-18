@@ -84,3 +84,92 @@ export const socialLinks = [
         url:'https://linkedin.com'
     },
 ]
+
+export const posts = [
+    {
+        id:1,
+        info:'By John Deo l Aug 23, 2021',
+        content:'8 Figma design systems that you can download for free today.'
+    },
+    {
+        id:2,
+        info:'By John Deo l Aug 23, 2021',
+        content:'8 Figma design systems that you can download for free today.'
+    },
+    {
+        id:3,
+        info:'By John Deo l Aug 23, 2021',
+        content:'8 Figma design systems that you can download for free today.'
+    },
+    {
+        id:4,
+        info:'By John Deo l Aug 23, 2021',
+        content:'8 Figma design systems that you can download for free today.'
+    }
+]
+
+export const categories = [
+    {
+        id:1,
+        title:'Business',
+        info:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        src:'src/assets/img/home/categories/icon1.png'
+    },
+    {
+        id:2,
+        title:'Startup',
+        info:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        src:'src/assets/img/home/categories/icon2.png'
+    },
+    {
+        id:3,
+        title:'Economy',
+        info:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        src:'src/assets/img/home/categories/icon3.png'
+    },
+    {
+        id:4,
+        title:'Technology',
+        info:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+        src:'src/assets/img/home/categories/icon4.png'
+    },
+]
+
+export const authorsList = [
+    {
+        id:1,
+        src:'src/assets/img/home/authors/authors1.png',
+        name:'Floyd Miles',
+        job:'Content Writer @Company'
+    },
+    {
+        id:2,
+        src:'src/assets/img/home/authors/authors2.png',
+        name:'Dianne Russell',
+        job:'Content Writer @Company'
+    },
+    {
+        id:3,
+        src:'src/assets/img/home/authors/authors3.png',
+        name:'Leslie Alexander',
+        job:'Content Writer @Company'
+    },
+    {
+        id:4,
+        src:'src/assets/img/home/authors/authors4.webp',
+        name:'Robert Franklin',
+        job:'Content Writer @Company'
+    },
+    {
+        id:5,
+        src:'src/assets/img/home/authors/authors5.webp',
+        name:'George Miles',
+        job:'Content Writer @Company'
+    },
+    {
+        id:6,
+        src:'src/assets/img/home/authors/authors6.webp',
+        name:'Firs Brooklin',
+        job:'Content Writer @Company'
+    },
+]

@@ -6,14 +6,14 @@
         <slot>
             <div  class="relative block z-[999] h-8 w-8 border-none border-r-0 bg-transparent pointer-events-auto custom-transition">
                 <span
-                    :class="{ 'rotate-45 -translate-y-0': isBurgerActive}"
-                    class="absolute bg-white top-1/2 h-[2px] w-full right-0 -translate-y-2 burger-transition"></span>
+                    class="absolute bg-white top-1/2 h-[2px] w-full right-0 -translate-y-2 burger-transition"
+                    :class="{'rotate-45 translate-y-0': isBurgerActive}"></span>
                 <span
-                    :class="{ 'opacity-0': isBurgerActive}"
-                    class="absolute bg-white top-1/2 h-[2px] scale-x-75 origin-top-right w-full  burger-transition"></span>
+                    class="absolute bg-white top-1/2 h-[2px] scale-x-75 origin-top-right w-full  burger-transition"
+                    :class="{ 'opacity-0': isBurgerActive}"></span>
                 <span
-                    :class="{'-rotate-45 translate-y-0': isBurgerActive}"
-                    class="absolute bg-white top-1/2 h-[2px] w-full right-0 translate-y-2 burger-transition"></span>
+                    class="absolute bg-white top-1/2 h-[2px] w-full right-0 translate-y-2 burger-transition"
+                    :class="{'translate-y-0 -rotate-45': isBurgerActive}"></span>
             </div>
         </slot>
     </div>
