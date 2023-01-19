@@ -7,7 +7,9 @@
     @apply font-inter text-base font-normal not-italic
   }
 }
-
+.router-link-active {
+  @apply text-yellow
+}
 .container {
 	@apply max-w-[1300px] my-0 mx-auto md:px-[10px] px-3
 }
@@ -25,6 +27,9 @@
 }
 .link__author:hover > svg > path {
         fill:#592EA9;
+}
+.header.hide {
+  @apply  translate-y-[-80px] shadow-none
 }
 
 #app {

@@ -43,7 +43,7 @@ export const menuFooterLinks = [
     },
     {
         name:'Privacy Policy',
-        path:'/privacyPolicy',
+        path:'/privacy_policy',
         id:5
     },
 ]
@@ -174,19 +174,3 @@ export const authorsList = [
     },
 ]
 
-export const onScrollHeader = () => {
-    let lastScroll = 0;
-    const defaultOffset = 300;
-    const header = document.querySelector('.header');
-    const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
-    const containHide = () => header.classList.contains('hide');
-    window.addEventListener('scroll', () => {
-        if(scrollPosition() > lastScroll && !containHide() && scrollPosition() > defaultOffset) {
-            header.classList.add('hide');
-        }
-        else if(scrollPosition() < lastScroll && containHide()){
-            header.classList.remove('hide');
-        }
-        lastScroll = scrollPosition();
-    })
-}

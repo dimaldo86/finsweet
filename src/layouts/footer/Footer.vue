@@ -9,7 +9,10 @@
                     </a>
                     <ul class="flex items-center flex-wrap mt-4 md:mt-0 md:ml-auto">
                         <li v-for="link in menuFooterLinks" :key="link.id" class="mr-3 sm:mr-6 last:mr-0 py-2">
-                            <a href="#" class="w-full text-sm sm:text-base text-white custom-transition hover:text-yellow">{{ link.name }}</a>
+                            <router-link
+                                :to="link.path"
+                                class="w-full text-sm sm:text-base text-white custom-transition hover:text-yellow"
+                            >{{ link.name }}</router-link>
                         </li>
                     </ul>
                 </div>

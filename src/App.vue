@@ -1,8 +1,8 @@
 <template>
     <HeaderVue></HeaderVue>
-    <main>
+  
         <router-view></router-view>
-    </main>
+
     <FooterVue></FooterVue>
 </template>
 
