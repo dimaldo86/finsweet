@@ -7,11 +7,14 @@
     @apply font-inter text-base font-normal not-italic
   }
 }
-.router-link-active {
+li > .router-link-active {
   @apply text-yellow
 }
 .container {
 	@apply max-w-[1300px] my-0 mx-auto md:px-[10px] px-3
+}
+.container-small {
+	@apply max-w-[768px] my-0 mx-auto md:px-[10px] px-3
 }
 .section__title {
   @apply w-full md:w-3/4 lg:w-1/2 text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen font-bold -tracking-3

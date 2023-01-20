@@ -20,7 +20,7 @@
                     <h2 class="section__title text-white ">
                         Subscribe to our news letter to get latest updates and news
                     </h2>
-                    <FormVue></FormVue>
+                    <FooterForm></FooterForm>
                 </div>
             </div>
             <div class="flex w-full items-center flex-col xs:flex-row mt-6 xs:mt-8 lg:mt-12">
@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import FormVue from '@/components/Form.vue';
+import FooterForm from './FooterForm.vue';
 import { menuFooterLinks } from '@/js/constants'
 import { socialLinks } from '@/js/constants';
 

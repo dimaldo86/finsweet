@@ -19,5 +19,6 @@ import HomeAuthor from '@/components/home/HomeAuthor.vue'
 import HomeTestimonial from '@/components/home/HomeTestimonial.vue'
 import HomeJoin from '@/components/home/HomeJoin.vue'
 
+
 </script>
 

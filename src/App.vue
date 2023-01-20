@@ -1,8 +1,8 @@
 <template>
     <HeaderVue></HeaderVue>
-  
-        <router-view></router-view>
-
+        <main >
+            <router-view/>
+        </main>
     <FooterVue></FooterVue>
 </template>
 
@@ -10,4 +10,21 @@
 import HeaderVue from '@/layouts/header/Header.vue'
 import FooterVue from '@/layouts/footer/Footer.vue';
 
+
+
 </script>
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+
+.fade-enter-active {
+  transition-delay: .25s;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+</style>
+

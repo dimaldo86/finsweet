@@ -1,37 +1,23 @@
 <template>
     <form
         @submit.prevent="submit"
-        class="relative w-full lg:w-1/2 flex flex-col sm:flex-row items-center gap-6 justify-between"
+        class="relative w-full lg:w-1/2 flex flex-col sm:flex-row gap-2 sm:gap-6 justify-between"
         novalidate
     >
-        <input
-            v-model.trim="data.email"
+        <uiInputVue
+            v-model:value.trim="data.email"
             @blur="v.email.$touch"
             :error="v.email.$errors"
-            class="bg-transparent w-full sm:w-3/5 text-white font-sen outline-none border border-darkGrey h-14 pl-6 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-white tansition duration-500 ease-in-out"
             type="email"
             name="email"
             placeholder="Enter Your Email"
-        >
+        />
         <uiButtonVue
+            type="button"
             :disabled="v.$invalid"
             class="disabled:bg-white disabled:text-mediumGrey disabled:cursor  transition duration-500 ease-in-out "
         >Subscribe
         </uiButtonVue>
-        <transition
-            enter-active-class="duration-300 ease-out"
-            leave-active-class="duration-700 ease-in-out"
-            enter-from-class="translate-x-[-50px] opacity-0"
-            leave-to-class="translate-x-[150px] opacity-0"
-            appear
-        >
-            <div
-                class="absolute bottom-[-37px] left-0 w-full text-yellow p-1"
-                v-if="v.email.$error"
-            >
-                {{ v.email.$errors[0].$message }}
-            </div>
-		</transition>
         <transition
             enter-active-class="duration-300 ease-out"
             leave-active-class="duration-700 ease-in-out"
@@ -46,7 +32,9 @@
 </template>
 
 <script setup>
-import uiButtonVue from './ui/ui-button.vue';
+import uiButtonVue from '../../components/ui/ui-button.vue'
+import uiInputVue from '../../components/ui/ui-input.vue'
+
 import { ref, computed, reactive } from 'vue'
 import { useVuelidate } from '@vuelidate/core'
 import { required, email, helpers } from '@vuelidate/validators'
@@ -76,7 +64,4 @@ const submit = ()=> {
             feedback.value = ''
 		}, 1000)
 }
-
-
-
 </script>
