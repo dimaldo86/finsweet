@@ -19,6 +19,12 @@ li > .router-link-active {
 .section__title {
   @apply w-full md:w-3/4 lg:w-1/2 text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen font-bold -tracking-3
 }
+.title {
+  @apply w-full text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen font-bold -tracking-3
+}
+.section__subtitle {
+  @apply text-primary uppercase font-semibold tracking-5
+}
 .link > svg > path, .link__author > svg > path  {
     @apply custom-transition
 }
@@ -33,6 +39,10 @@ li > .router-link-active {
 }
 .header.hide {
   @apply  translate-y-[-80px] shadow-none
+}
+
+img {
+  @apply w-full h-full object-cover
 }
 
 #app {

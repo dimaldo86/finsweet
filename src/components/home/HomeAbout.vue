@@ -8,7 +8,7 @@
             </div>
             <div class="bg-lavendar w-full py-8 xs:py-12 sm:py-20 lg:py-24 px-6 xs:px-8 sm:px-16 lg:px-20 flex flex-col md:flex-row items-center gap-8 xs:gap-12 sm:gap-16 lg:gap-20">
                 <div class="w-full md:w-1/2">
-                    <div class="text-primary uppercase font-semibold tracking-5">ABOUT US</div>
+                    <div class="section__subtitle">ABOUT US</div>
                     <h3 class="mt-6 text-primary text-2xl sm:text-4xl font-bold font-sen">We are a community of content writers who share their learnings</h3>
                     <p class="mt-4 text-mediumGrey">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -16,7 +16,7 @@
                     </p>
                 </div>
                 <div class="w-full md:w-1/2">
-                    <div class="text-primary uppercase font-semibold tracking-5">Our mision</div>
+                    <div class="section__subtitle">Our mision</div>
                     <h3 class="mt-6 text-primary text-xl sm:text-3xl font-bold font-sen">Creating valuable content for creatives all around the world</h3>
                     <p class="mt-4 text-mediumGrey">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,

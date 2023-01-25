@@ -6,7 +6,7 @@
                     <h2 class="section__title text-primary lg:w-full">Featured Post</h2>
                     <div class="mt-6 lg:mt-8 p-4 sm:p-5 md:p-8 border border-mediumGrey/10 h-auto sm:h-[720px]">
                         <div class="w-full h-[350px]">
-                            <img class="w-full h-full object-cover" src="@/assets/img/home/post.png" alt="post">
+                            <img src="@/assets/img/home/post.png" alt="post">
                         </div>
                         <div class="mt-8 w-[220px] text-sm text-darkGrey flex items-center justify-between">
                                 <span>By <span class="text-purple">James West</span></span>

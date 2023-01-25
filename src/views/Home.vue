@@ -1,12 +1,12 @@
 <template>
-    <HomeMain></HomeMain>
-    <HomePost></HomePost>
-    <HomeAbout></HomeAbout>
-    <HomeCategory></HomeCategory>
-    <HomeStory></HomeStory>
-    <HomeAuthor></HomeAuthor>
-    <HomeTestimonial></HomeTestimonial>
-    <HomeJoin></HomeJoin>
+    <HomeMain />
+    <HomePost />
+    <HomeAbout />
+    <HomeCategory />
+    <HomeStory />
+    <HomeAuthor />
+    <HomeTestimonial />
+    <HomeJoin />
 </template>
 
 <script setup>

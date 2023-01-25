@@ -1,5 +1,5 @@
 <template>
-   <section class="pt-4 pb-32">
+   <section class="pt-4 pb-6 sm:pb-16 md:pb-24 lg:pb-32">
         <div class="container-small">
             <form
                 @submit.prevent="submit"
@@ -13,6 +13,8 @@
                     type="text"
                     name="name"
                     placeholder="Full Name"
+                    textColor="primary"
+                    size="w-full"
                 />
                 <uiInputVue
                     v-model:value.trim="data.email"
@@ -21,15 +23,18 @@
                     type="email"
                     name="email"
                     placeholder="Your Email"
+                    textColor="primary"
+                    size="w-full"
                 />
                 <textarea
                     v-model.trim="data.message"
                     name="message"
                     placeholder="Message"
-                    class="w-full h-[144px] resize-none bg-transparent text-primary font-sen outline-none border border-darkGrey  pl-6 pr-3 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-yellow transition duration-500 ease-in-out"
+                    class="w-full h-[144px] resize-none bg-transparent text-primary font-sen outline-none border-2 border-mediumGrey  pl-6 pr-3 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-yellow transition duration-500 ease-in-out"
                 ></textarea>
                 <uiButtonVue
                     :disabled="v.$invalid"
+                    size="w-full"
                     class="disabled:bg-lavendar disabled:text-mediumGrey disabled:cursor transition duration-500 ease-in-out "
                 >Send Message
                 </uiButtonVue>

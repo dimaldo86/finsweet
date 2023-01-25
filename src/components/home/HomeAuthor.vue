@@ -18,7 +18,7 @@
                 >
                 <div class="w-[140px] h-[140px]">
                     <img
-                        class="group-hover:border-primary group-hover:scale-[0.9] custom-transition w-full h-full object-cover rounded-full border-8 border-transparent hover:border-primary"
+                        class="group-hover:border-primary group-hover:scale-[0.9] custom-transition rounded-full border-8 border-transparent hover:border-primary"
                         :src="item.src"
                         :alt="item.name"
                     >

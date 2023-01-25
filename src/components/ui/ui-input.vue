@@ -1,7 +1,10 @@
 <template>
-    <div class=" w-full sm:w-3/5">
+    <div class="w-full"
+        :class="[`sm:${size}`]"
+        >
         <input
             class="input"
+            :class="[`text-${textColor}`]"
             :type="type"
             :name="name"
             :id="name"
@@ -17,7 +20,7 @@
             appear
         >
             <div
-                class="w-full text-yellow p-1"
+                class="w-full text-pink-400 p-1"
                 v-for="element of error"
                 :key="element.$uid"
             >
@@ -48,6 +51,14 @@ const props = defineProps({
     error: {
         type: Array,
         required: false
+    },
+    textColor:{
+        type:String,
+        default:'white'
+    },
+    size: {
+        type:String,
+        default:'w-3/5'
     }
 })
 
@@ -59,7 +70,7 @@ const updateValue = (e) => {
 
 <style lang="postcss" scoped>
 .input{
-  @apply  bg-transparent w-full h-14 text-white font-sen outline-none border border-darkGrey  pl-6 pr-3 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-yellow transition duration-500 ease-in-out
+  @apply  bg-transparent w-full h-14 font-sen outline-none border-2 border-mediumGrey  pl-6 pr-3 py-3 placeholder:text-sm sm:text-base placeholder:text-mediumGrey focus:border-yellow transition duration-500 ease-in-out
 }
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-12 xs:mt-16 sm:mt-20 bg-lavendar py-10 xs:py-16 sm:py-20">
+    <section class="mt-8 xs:mt-16 sm:mt-20 bg-lavendar py-10 xs:py-16 sm:py-20">
         <div class="container-small">
             <div class="text-center">
                 <h1 class="font-bold font-sen text-3xl lg:text-5xl -tracking-3">Privacy Policy</h1>

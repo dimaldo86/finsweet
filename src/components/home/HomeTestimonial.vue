@@ -3,7 +3,7 @@
     <div class="container">
         <div class="bg-lightYellow px-28 py-16 flex justify-center w-full">
             <div class="w-2/5 flex flex-col pr-20 ">
-                <div class="text-primary uppercase font-semibold tracking-5">TESTIMONIALS</div>
+                <div class="section__subtitle">TESTIMONIALS</div>
                 <h3 class="mt-3 text-primary text-2xl sm:text-4xl font-bold font-sen">What people say about our blog</h3>
                 <p class="mt-4 text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
@@ -15,7 +15,7 @@
                 <div class="mt-[120px] flex items-center justify-between">
                     <div class="flex items-center">
                         <div class="w-12 h-12">
-                            <img class="w-full h-full object-cover" src="@/assets/img/home/testimonial.png" alt="testimonial">
+                            <img src="@/assets/img/home/testimonial.png" alt="testimonial">
                         </div>
                         <div class="ml-4">
                             <div class="text-primary font-sen font-bold text-2xl">Jonathan Vallem</div>
