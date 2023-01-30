@@ -138,39 +138,51 @@ export const categories = [
 export const authorsList = [
     {
         id:1,
-        src:'src/assets/img/home/authors/authors1.png',
+        src:'src/assets/img/authors/authors1.png',
         name:'Floyd Miles',
         job:'Content Writer @Company'
     },
     {
         id:2,
-        src:'src/assets/img/home/authors/authors2.png',
+        src:'src/assets/img/authors/authors2.png',
         name:'Dianne Russell',
         job:'Content Writer @Company'
     },
     {
         id:3,
-        src:'src/assets/img/home/authors/authors3.png',
-        name:'Leslie Alexander',
+        src:'src/assets/img/authors/authors3.png',
+        name:'Jenny Wilson',
         job:'Content Writer @Company'
     },
     {
         id:4,
-        src:'src/assets/img/home/authors/authors4.webp',
-        name:'Robert Franklin',
+        src:'src/assets/img/authors/authors4.png',
+        name:'Leslie Alexander',
         job:'Content Writer @Company'
     },
     {
         id:5,
-        src:'src/assets/img/home/authors/authors5.webp',
-        name:'George Miles',
+        src:'src/assets/img/authors/authors5.png',
+        name:'Guy Hawkins',
         job:'Content Writer @Company'
     },
     {
         id:6,
-        src:'src/assets/img/home/authors/authors6.webp',
-        name:'Firs Brooklin',
+        src:'src/assets/img/authors/authors6.png',
+        name:'Eleanor Pena',
         job:'Content Writer @Company'
     },
+    {
+        id:7,
+        src:'src/assets/img/authors/authors7.png',
+        name:'Robert Fox',
+        job:'Content Writer @Company'
+    },
+    {
+        id:8,
+        src:'src/assets/img/authors/authors8.png',
+        name:'Jacob Jones',
+        job:'Content Writer @Company'
+    }
 ]
 

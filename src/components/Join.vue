@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import uiButtonVue from '../ui/ui-button.vue'
+import uiButtonVue from '@/components/ui/ui-button.vue'
 
 </script>
 

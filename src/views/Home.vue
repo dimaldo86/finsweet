@@ -6,7 +6,7 @@
     <HomeStory />
     <HomeAuthor />
     <HomeTestimonial />
-    <HomeJoin />
+    <Join />
 </template>
 
 <script setup>
@@ -17,7 +17,7 @@ import HomeCategory from '@/components/home/HomeCategory.vue'
 import HomeStory from '@/components/home/HomeStory.vue'
 import HomeAuthor from '@/components/home/HomeAuthor.vue'
 import HomeTestimonial from '@/components/home/HomeTestimonial.vue'
-import HomeJoin from '@/components/home/HomeJoin.vue'
+import Join from '@/components/Join.vue'
 
 
 </script>

@@ -1,11 +1,10 @@
 <template>
-    <section class="pb-16">
+    <section class="py-12 xs:pt-16 lg:pt-0 pb-8">
         <div class="container">
-            <div class="relative flex flex-col lg:flex-row w-full gap-16">
+            <div class="relative flex flex-col lg:flex-row w-full gap-8 sm:gap-16">
                 <div class="w-full lg:w-1/2">
-                    <img class="min-h-[250px] h-[500px] lg:h-full" src="@/assets/img/about/blog.png" alt="blog">
+                    <img class="h-[250px] sm:h-[500px] lg:h-full" src="@/assets/img/about/blog.png" alt="blog">
                 </div>
-                <div class="absolute bottom-[-37px] left-[107px] w-[74px] h-[74px] bg-purple rounded-full"></div>
                 <div class="flex flex-col w-full lg:w-1/2 md:px-8 lg:px-0 pb-4 sm:pb-8 py-0 lg:py-12 xl:py-20">
                     <h2 class="title ">Why we started this Blog</h2>
                     <div class="mt-4 font-sen font-bold text-lg sm:text-xl md:text-2xl">
@@ -18,6 +17,7 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
                     </div>
                 </div>
+                <div class="absolute bottom-[103%] left-[30%] sm:left-[33%] md:left-[38%] lg:bottom-[-37px] lg:left-[107px] w-[54px] h-[54px] xs:w-[74px] xs:h-[74px]  bg-purple rounded-full"></div>
             </div>
         </div>
     </section>

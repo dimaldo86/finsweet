@@ -23,7 +23,7 @@
                         :alt="item.name"
                     >
                 </div>
-                <h4 class="mt-5 text-primary font-sen font-bold text-xl sm:text-3xl -tracking-2">{{ item.name }}</h4>
+                <h4 class="mt-5 text-primary font-sen font-bold text-base xs:text-xl sm:text-3xl -tracking-2">{{ item.name }}</h4>
                 <div class="mt-2 text-mediumGrey text-sm">{{ item.job }}</div>
                 <ul class="group-hover:opacity-100 translate-y-[100px] group-hover:translate-y-0 group-hover:visible custom-transition opacity-0 invisible  flex items-center justify-between mt-5">
                     <li
