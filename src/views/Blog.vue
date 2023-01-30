@@ -1,10 +1,9 @@
 <template>
-
-    <h1 class="mt-32" >blog</h1>
+    <BlogHeader />
 </template>
 
 <script setup>
-
+import BlogHeader from '@/components/Blog/BlogHeader.vue'
 
 
 </script>
