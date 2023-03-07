@@ -1,7 +1,7 @@
 <template>
     <section class="py-0 sm:py-8 md:py-16">
         <div class="container">
-            <h2 class="section__title text-center w-full lg:w-full">Choose A Catagory</h2>
+            <h2 :class="[positionTitle]" class="section__title w-full lg:w-full">{{ title }}</h2>
             <ul class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8 w-full mt-6 sm:mt-8 md:mt-12">
                 <li
                     class="group flex flex-col p-4 sm:p-8 custom-transition hover:bg-yellow cursor-pointer "
@@ -10,7 +10,6 @@
                 >
                     <div class="group-hover:bg-white w-12 h-12 flex items-center justify-center bg-lightYellow border-transparent rounded-lg">
                         <img
-
                             :src="item.src"
                             :alt="item.title"
                         >
@@ -25,5 +24,16 @@
 
 <script setup>
 import { categories } from '@/js/constants';
+
+const props = defineProps({
+    title:{
+        type: String,
+        default:'Choose A Catagory'
+    },
+    positionTitle:{
+        type: String,
+        default:'text-center'
+    }
+})
 
 </script>

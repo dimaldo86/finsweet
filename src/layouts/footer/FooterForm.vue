@@ -32,8 +32,8 @@
 </template>
 
 <script setup>
-import uiButtonVue from '../../components/ui/ui-button.vue'
-import uiInputVue from '../../components/ui/ui-input.vue'
+import uiButtonVue from '@/components/ui/ui-button.vue'
+import uiInputVue from '@/components/ui/ui-input.vue'
 
 import { ref, computed, reactive } from 'vue'
 import { useVuelidate } from '@vuelidate/core'
