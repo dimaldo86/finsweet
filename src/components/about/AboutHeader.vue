@@ -1,5 +1,5 @@
 <template>
-    <section class="pt-16 sm:pt-24 md:pt-32 lg:pt-40">
+    <section class="pt-12 sm:pt-23">
         <div class="container">
             <div class="flex flex-col lg:flex-row items-center w-full gap-0 xl:gap-8 pl-0 lg:pl-[9%]">
                 <div class="flex bg-white flex-col w-full lg:w-3/5 xl:w-1/2 py-4 px-0 md:px-8 lg:p-12 xl:p-16 lg:translate-y-[60px] lg:z-[11]">

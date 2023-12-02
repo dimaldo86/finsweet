@@ -35,7 +35,7 @@
                         :key="link.id"
                     >
                         <a
-                            class="link w-5 h-5"
+                            class="link w-5 h-5 cursor-pointer"
                             :to="link.url"
                             v-html="link.icon"
                             target="_blank"

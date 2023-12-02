@@ -1,7 +1,7 @@
 <template>
   <section class="bg-[url('@/assets/img/home/main.jpg')] bg-center bg-no-repeat bg-cover pt-12 sm:pt-24 pb-12 sm:pb-32 md:pb-44 2xl:pb-72">
         <div class="container">
-            <div class=" mt-8 sm:mt-16 md:mt-32 w-full h-full">
+            <div class=" mt-8 sm:mt-16 md:mt-16 w-full h-full">
                 <div class="text-white tracking-5">Posted on <b>startup</b></div>
                 <h1 class="mt-6 text-4xl sm:text-5xl md:text-6xl font-sen text-white -tracking-2">Step-by-step guide to choosing great font pairs</h1>
                 <div class="mt-6 w-[250px] text-lightGrey flex items-center justify-between">

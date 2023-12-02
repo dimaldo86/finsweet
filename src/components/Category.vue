@@ -16,6 +16,7 @@
                     </div>
                     <h4 class="group-hover:text-purple mt-4 font-bold text-primary text-xl xs:text-2xl sm:text-3xl -tracking-2">{{item.title }}</h4>
                     <div class="mt-2 text-mediumGrey">{{ item.info }}</div>
+
                 </li>
             </ul>
         </div>
@@ -23,7 +24,7 @@
 </template>
 
 <script setup>
-import { categories } from '@/js/constants';
+import { categories } from '@/js/constants'
 
 const props = defineProps({
     title:{

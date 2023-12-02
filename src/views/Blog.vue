@@ -16,10 +16,8 @@ import { onMounted, ref } from 'vue'
 const posts = ref([])
 
 onMounted(async () => {
-        posts.value = await getPosts();
+        posts.value = await getPosts()
     }
 )
-
-
 </script>
 

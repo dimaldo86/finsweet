@@ -5,7 +5,7 @@
             <div class="mt-8 border border-mediumGrey-32"></div>
             <div class="flex flex-col mt-16 gap-16">
                 <Post
-                    v-for="post in limitPosts"
+                    v-for="post in posts"
                     :id="post.id"
                     :key="post.id"
                     :title="post.title"
@@ -15,8 +15,10 @@
                     :author="post.author"
                     :description="post.description"
                 />
-                <BlogPagination
-                :totalItems="21" />
+                <BlogPagination :data="posts"/>
+
+
+
             </div>
         </div>
     </section>
@@ -25,18 +27,13 @@
 <script setup>
 import BlogPagination from './BlogPagination.vue'
 import Post from '../Post.vue'
-import { computed } from 'vue'
 
 const props = defineProps({
     posts:{
         type: Array,
-        required:true,
+        required:true
     }
 })
-
-const limitPosts = computed(() => props.posts)
-
-
 
 </script>
 

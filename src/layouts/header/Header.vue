@@ -19,7 +19,7 @@
                     <uiButtonVue background="bg-white">Subscribe</uiButtonVue>
                 </HeaderMobileMenuVue>
                 <div class="md:flex items-center ml-auto h-full hidden">
-                    <ul class="flex items-center justify-between mr-8">
+                        <ul class="flex items-center justify-between mr-8">
                         <li v-for="link in menuHeaderLinks" :key="link.id" class="mr-8 last:mr-0">
                             <router-link
                                 exact
@@ -78,3 +78,5 @@ onUnmounted(() => {
     window.removeEventListener('scroll', smartHeaderScroll)
 })
 </script>
+
+

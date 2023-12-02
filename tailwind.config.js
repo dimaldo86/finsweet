@@ -37,6 +37,9 @@ module.exports = {
           'inter':['Inter', 'sans-serif'],
           'sen':['Sen', 'sans-serif']
         },
+        zIndex: {
+          '1000': '1000',
+        }
       },
     },
     plugins: [],
