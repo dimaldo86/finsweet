@@ -1,6 +1,6 @@
-export async function getPosts (pageNumber) {
+export async function getPosts () {
     try {
-        const res =  await fetch(`http://localhost:3000/posts?page=${pageNumber}`)
+        const res =  await fetch(`http://localhost:3000/posts`)
         const data =  await res.json()
         return data
 

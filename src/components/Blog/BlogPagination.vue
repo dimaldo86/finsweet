@@ -1,8 +1,8 @@
 <template>
     <vue-awesome-paginate
-        :total-items="21"
-        :items-per-page="5"
-        :max-pages-shown="3"
+        :total-items="totalItems"
+        :items-per-page="itemsPerPage"
+        :max-pages-shown="pageShowItems"
         :current-page="1"
         v-model="currentPage"
         :on-click="onClickHandler"
@@ -12,27 +12,43 @@
         type="link"
         link-url="/blog/posts?page=[page]"
     />
+
+
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 
 const props = defineProps({
-    data:{
+    allItems:{
         type: Array,
         required:true
     }
 })
 
 
-const currentPage = ref(1);
+const currentPage = ref(1)
+const itemsPerPage = ref(5)
+const totalItems = ref()
+const allItems = ref(props.allItems)
+
+totalItems.value = allItems.value.length
+
+const pageShowItems = computed(() => Math.ceil(totalItems.value / itemsPerPage.value))
+
+const dispyedItems = computed(() => {
+    const startIndex = (currentPage.value * itemsPerPage.value) - itemsPerPage.value
+    const endIndex = startIndex + itemsPerPage.value
+    return totalItems.value.slice(startIndex, endIndex)
+})
+
+
+
 const onClickHandler = (page) => {
     currentPage.value = page
-      console.log(currentPage.value);
-};
-
-
+    // console.log(currentPage.value)
+}
 </script>
 
 <style lang="css">
@@ -40,28 +56,29 @@ const onClickHandler = (page) => {
     --primary: #592EA9;
     --secondary:#FFD050;
 }
+
 ul#componentContainer {
     display: flex;
-    column-gap: 10px;
+    column-gap: 4px;
     align-items: center;
     justify-content: center;
 }
 .pagination-container {
     font-family: 'Sen';
-    margin-top: 64px;
-  }
+    margin-top: 20px;
+}
 .back-button {
     transition: all .5s ease-in-out;
 }
 .paginate-buttons {
-    height: 40px;
-    width: 80px;
+    height: 20px;
+    width: 40px;
     cursor: pointer;
     background-color:#fff;
     border:1px solid #232536;
     color: #6D6E76;
     transition: all .5s ease-in-out;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
 }
 
@@ -74,6 +91,12 @@ ul#componentContainer {
     transition: all .5s ease-in-out;
     border: 1px solid var(--primary);
 }
+.active-page:hover {
+    background-color:  var(--primary);
+    border: 1px solid var(--primary);
+    color: white;
+}
+
 @media (hover: hover) {
     .paginate-buttons:hover {
         background-color:var(--secondary);
@@ -82,9 +105,36 @@ ul#componentContainer {
         font-weight: 700;
     }
 }
-.active-page:hover {
-    background-color:  var(--primary);
-    border: 1px solid var(--primary);
-    color: white;
+@media (min-width: 475px) {
+    .paginate-buttons {
+        height: 26px;
+        width: 48px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 640px) {
+    ul#componentContainer {
+        column-gap: 10px;
+    }
+    .pagination-container {
+        margin-top: 35px;
+    }
+    .paginate-buttons {
+        height: 30px;
+        width: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pagination-container {
+        margin-top: 64px;
+    }
+    .paginate-buttons {
+        height: 40px;
+        width: 80px;
+        font-size: 18px;
+    }
 }
 </style>

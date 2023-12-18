@@ -4,7 +4,7 @@
         <button
             @click="scrollToTop"
             v-show="!isHidden"
-            class="fixed z-1000 bottom-28 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-purple text-yellow text-4xl font-bold burger-transition"
+            class="fixed z-1000 bottom-28 right-4 sm:right-8 border-0 w-8 sm:w-12 md:w-16 h-8 sm:h-12 md:h-16 rounded-full drop-shadow-md bg-purple/75 text-yellow text-2xl sm:text-4xl font-bold burger-transition"
         >&uarr;</button>
     </transition>
 
