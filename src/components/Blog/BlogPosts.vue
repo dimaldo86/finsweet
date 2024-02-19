@@ -10,7 +10,7 @@
                     :id="post.id"
                     :key="post.id"
                     :title="post.title"
-                    :category="post.category"
+                    :category="post.category.title"
                     :src="post.src"
                     :articles="post.articles"
                     :author="post.author"
@@ -45,10 +45,12 @@ const router = useRouter()
 const route = useRoute()
 
 const posts = ref([])
+const postId = ref('')
 const currentPage = ref(+route.query.page || 1)
 const itemsPerPage = ref(5)
 const totalItems = ref()
 const pageShowItems = ref()
+
 
 const dispyedPosts = computed(() => {
     const startIndex = (currentPage.value * itemsPerPage.value) - itemsPerPage.value

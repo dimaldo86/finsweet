@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply font-inter text-base font-normal not-italic
+    @apply font-inter text-base font-normal not-italic text-primary
   }
 }
 li > .router-link-active {
@@ -21,6 +21,9 @@ li > .router-link-active {
 }
 .title {
   @apply w-full text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-sen font-bold -tracking-3
+}
+.title-48 {
+  @apply w-full text-xl xs:text-2xl sm:text-3xl lg:text-5xl font-sen font-bold -tracking-3
 }
 .section__subtitle {
   @apply text-primary uppercase font-semibold tracking-5

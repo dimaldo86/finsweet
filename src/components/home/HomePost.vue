@@ -25,7 +25,7 @@
                 <div class="w-full  md:w-1/2 flex flex-col mt-4 sm:mt-6 md:mt-0">
                 <div class="flex justify-between items-center">
                     <h2 class="section__title text-primary lg:w-full">All Posts</h2>
-                    <div class="text-purple w-20 text-right">View All</div>
+                    <router-link to="/blog" class="text-purple w-20 text-right">View All</router-link>
                 </div>
                 <ul class="w-full flex flex-col items-center mt-6 lg:mt-8 h-auto sm:h-[720px]">
                     <li

@@ -2,8 +2,12 @@
     "posts": [
         {
             "id": "1",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts1.png",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts1.png",
             "title": "Design tips for designers that cover everything you need",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -26,14 +30,18 @@
             ],
             "author": {
                 "name":"Floyd Miles",
-                "src":"assets/img/authors/authors1.png",
+                "src":"../src/assets/img/authors/authors1.png",
                 "date":"27th January 2022"
             }
         },
         {
             "id": "2",
-            "category": "startup",
-            "src": "./src/assets/img/blog/posts/posts2.png",
+            "category": {
+                "title":"Startup",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon2.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts2.png",
             "title": "Logo design trends to avoid in 2022",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -56,14 +64,18 @@
             ],
             "author": {
                 "name":"Dianne Russell",
-                "src":"assets/img/authors/authors2.png",
+                "src":"../src/assets/img/authors/authors2.png",
                 "date":"5th February 2021"
             }
         },
         {
             "id": "3",
-            "category": "business",
-            "src": "./src/assets/img/blog/posts/posts3.png",
+            "category": {
+                "title":"Business",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon1.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts3.png",
             "title": "How to build rapport with your web design clients",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -86,14 +98,18 @@
             ],
             "author": {
                 "name":"Jenny Wilson",
-                "src":"assets/img/authors/authors3.png",
+                "src":"../src/assets/img/authors/authors3.png",
                 "date":"11th March 2022"
             }
         },
         {
             "id": "4",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts4.png",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts4.png",
             "title": "Font sizes in UI design: The complete guide to follow",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -116,14 +132,18 @@
             ],
             "author": {
                 "name":"Leslie Alexander",
-                "src":"assets/img/authors/authors4.png",
+                "src":"../src/assets/img/authors/authors4.png",
                 "date":"8th May 2022"
             }
         },
         {
             "id": "5",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts5.png",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts5.png",
             "title": "8 Figma design systems you can download for free today",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -146,14 +166,18 @@
             ],
             "author": {
                 "name":"Guy Hawkins",
-                "src":"assets/img/authors/authors5.png",
+                "src":"../src/assets/img/authors/authors5.png",
                 "date":"19th April 2021"
             }
         },
         {
             "id": "6",
-            "category": "startup",
-            "src": "./src/assets/img/blog/posts/posts6.png",
+            "category": {
+                "title":"Startup",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon2.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts6.png",
             "title": "Step-by-step guide to choosing great font pairs",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -176,14 +200,18 @@
             ],
             "author": {
                 "name":"Eleanor Pena",
-                "src":"assets/img/authors/authors6.png",
+                "src":"../src/assets/img/authors/authors6.png",
                 "date":"30th June 2022"
             }
         },
         {
             "id": "7",
-            "category": "business",
-            "src": "./src/assets/img/blog/posts/posts7.jpg",
+            "category": {
+                "title":"Business",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon1.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts7.jpg",
             "title": "A UX Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -206,14 +234,18 @@
             ],
             "author": {
                 "name":"Robert Fox",
-                "src":"assets/img/authors/authors7.png",
+                "src":"../src/assets/img/authors/authors7.png",
                 "date":"10th July 2021"
             }
         },
         {
             "id": "8",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts8.jpeg",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts8.jpeg",
             "title": "A UX Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -236,14 +268,18 @@
             ],
             "author": {
                 "name":"Jacob Jones",
-                "src":"assets/img/authors/authors8.png",
+                "src":"../src/assets/img/authors/authors8.png",
                 "date":"12th August 2020"
             }
         },
         {
             "id": "9",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts9.jpeg",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts9.jpeg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -266,14 +302,18 @@
             ],
             "author": {
                 "name":"Floyd Miles",
-                "src":"assets/img/authors/authors1.png",
+                "src":"../src/assets/img/authors/authors1.png",
                 "date":"13th September 2022"
             }
         },
         {
             "id": "10",
-            "category": "startup",
-            "src": "./src/assets/img/blog/posts/posts10.jpeg",
+            "category": {
+                "title":"Startup",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon2.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts10.jpeg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -296,14 +336,18 @@
             ],
             "author": {
                 "name":"Dianne Russell",
-                "src":"assets/img/authors/authors2.png",
+                "src":"../src/assets/img/authors/authors2.png",
                 "date":"18th October 2022"
             }
         },
         {
             "id": "11",
-            "category": "business",
-            "src": "./src/assets/img/blog/posts/posts11.jpg",
+            "category": {
+                "title":"Business",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon1.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts11.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -326,14 +370,18 @@
             ],
             "author": {
                 "name":"Jenny Wilson",
-                "src":"assets/img/authors/authors3.png",
+                "src":"../src/assets/img/authors/authors3.png",
                 "date":"22th November 2022"
             }
         },
         {
             "id": "12",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts12.jpg",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts12.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -356,14 +404,18 @@
             ],
             "author": {
                 "name":"Leslie Alexander",
-                "src":"assets/img/authors/authors4.png",
+                "src":"../src/assets/img/authors/authors4.png",
                 "date":"19th December 2021"
             }
         },
         {
             "id": "13",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts13.jpg",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts13.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -386,14 +438,18 @@
             ],
             "author": {
                 "name":"Guy Hawkins",
-                "src":"assets/img/authors/authors5.png",
+                "src":"../src/assets/img/authors/authors5.png",
                 "date":"23th November 2021"
             }
         },
         {
             "id": "14",
-            "category": "business",
-            "src": "./src/assets/img/blog/posts/posts14.jpg",
+            "category": {
+                "title":"Business",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon1.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts14.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -416,14 +472,18 @@
             ],
             "author": {
                 "name":"Eleanor Pena",
-                "src":"assets/img/authors/authors6.png",
+                "src":"../src/assets/img/authors/authors6.png",
                 "date":"8th May 2021"
             }
         },
         {
             "id": "15",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts15.jpg",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts15.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -446,14 +506,18 @@
             ],
             "author": {
                 "name":"Robert Fox",
-                "src":"assets/img/authors/authors7.png",
+                "src":"../src/assets/img/authors/authors7.png",
                 "date":"12th june 2021"
             }
         },
         {
             "id": "16",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts16.jpg",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts16.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -476,14 +540,18 @@
             ],
             "author": {
                 "name":"Robert Fox",
-                "src":"assets/img/authors/authors7.png",
+                "src":"../src/assets/img/authors/authors7.png",
                 "date":"12th june 2021"
             }
         },
         {
             "id": "17",
-            "category": "business",
-            "src": "./src/assets/img/blog/posts/posts17.jpg",
+            "category": {
+                "title":"Business",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon1.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts17.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -506,14 +574,18 @@
             ],
             "author": {
                 "name":"Jacob Jones",
-                "src":"assets/img/authors/authors8.png",
+                "src":"../src/assets/img/authors/authors8.png",
                 "date":"18th April 2021"
             }
         },
         {
             "id": "18",
-            "category": "startup",
-            "src": "./src/assets/img/blog/posts/posts18.webp",
+            "category": {
+                "title":"Startup",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon2.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts18.webp",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -536,14 +608,18 @@
             ],
             "author": {
                 "name":"Floyd Miles",
-                "src":"assets/img/authors/authors1.png",
+                "src":"../src/assets/img/authors/authors1.png",
                 "date":"28th September 2022"
             }
         },
         {
             "id": "19",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts19.jpg",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts19.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -566,14 +642,18 @@
             ],
             "author": {
                 "name":"Leslie Alexander",
-                "src":"assets/img/authors/authors4.png",
+                "src":"../src/assets/img/authors/authors4.png",
                 "date":"9th December 2021"
             }
         },
         {
             "id": "20",
-            "category": "economy",
-            "src": "./src/assets/img/blog/posts/posts20.jpg",
+            "category": {
+                "title":"Economy",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon3.png"
+            },
+            "src": "../src/assets/img/blog/posts/posts20.jpg",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -596,14 +676,19 @@
             ],
             "author": {
                 "name":"Jacob Jones",
-                "src":"assets/img/authors/authors8.png",
+                "src":"../src/assets/img/authors/authors8.png",
                 "date":"10th March 2022"
             }
         },
         {
             "id": "21",
-            "category": "technology",
-            "src": "./src/assets/img/blog/posts/posts21.webp",
+            "category":{
+                "title":"Technology",
+                "info":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+                "src":"../src/assets/img/home/categories/icon4.png"
+            },
+
+            "src": "../src/assets/img/blog/posts/posts21.webp",
             "title": "A Lorem Case Study Creating a Studious Environment for Students: ",
             "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
             "articles": [
@@ -626,7 +711,7 @@
             ],
             "author": {
                 "name":"Eleanor Pena",
-                "src":"assets/img/authors/authors6.png",
+                "src":"../src/assets/img/authors/authors6.png",
                 "date":"5th March 2021"
             }
         }
